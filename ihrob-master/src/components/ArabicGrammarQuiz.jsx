@@ -58,7 +58,7 @@ const ArabicGrammarQuiz = ({ onBack }) => {
 
 
     const levelQs = [...bank[level]].sort(() => Math.random() - 0.5);
-    setQuestions(levelQs.slice(0, 5)); // Pick 5 per round
+    setQuestions(levelQs.slice(0, 10)); // Pick 10 questions per round
     setCurrentQuestion(0);
     setSelectedAnswer(null);
     setShowResult(false);
